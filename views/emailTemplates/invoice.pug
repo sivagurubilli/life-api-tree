@@ -1,0 +1,79 @@
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  title Invoice
+.container(style='width:80%;')
+  .row(style=' width:100%; padding:20px;')
+    // <img src='../images/logo.png' ></div>
+    .col-md-12(align='center')
+      h3 OCTAL OPTIMUM TECHNOLOGIES Pvt. Ltd.
+      h4
+        | #1278, 1st Floor, 25th Main, 40th Cross Road, 9th Block,
+        br
+        | Jayanagar, Bengaluru, Karnataka 560041
+        br
+        | www.octaloptimum.com info@octaloptimum.com
+  hr
+  div(align='center')
+    h3 INVOICE
+  .row(style='border:solid 1px; width:100%; padding:10px; margin-top:10px;')
+    .col-md-3
+      label(style=' color:#993366;')  CLIENT ID
+      label #{referralCode}
+    .col-md-3
+      | Invoice No
+      label(style='width:400px; color:#993366;') #{invoiceNumber}
+    .col-md-3
+      label(style=' color:#993366;') Invoice Date
+      label #{planStartsAt}
+    .col-md-3
+      label(style=' color:#993366;') Next Due Date
+      label #{planExpiresAt}
+  .row(style='border:solid 1px; width:100%; padding:10px; margin-top:10px;')
+    .col-md-12
+      label(style='color:black;') Invoiced To,
+      label #{name}
+      br
+      br
+      label #{address}
+  br
+  .row
+    table(style='border:solid 1px; width:97%;')
+      tr(style='border: solid 1px black;')
+        td(style='width:45%; border: solid 1px black; font-weight:bold; height:30px;' align='center') Description
+        td(style='width:15%; border: solid 1px black; font-weight:bold; height:30px;' align='center')  UOM*
+        td(style='width:15%; border: solid 1px black; font-weight:bold; height:30px;' align='center') Price (In INR)
+        td(style='width:15%;border: solid 1px black; font-weight:bold; height:30px;' align='center')  Value (In INR)
+      tr
+        td(style='border: solid 1px black; height:50px;') #{planName}
+        td(style='border: solid 1px black;') 1
+        td(style='border: solid 1px black;') #{amount}
+        td(style='border: solid 1px black;') #{amount}
+    table(style='border:solid 1px; width:97%;')
+      tr(style='border: solid 1px black;')
+        td(style='width:50%; border: solid 1px black; font-weight:bold; height:30px;' align='center')
+        td(style='width:50%; border: solid 1px black; font-weight:bold; height:30px;' align='center')  UOM*
+    br
+    table(style='width:97%; border:solid 1px;')
+      tr
+        td Cancellation &amp; Refund Policy:
+      tr
+        td
+          | 1.No cancellation and No refund is allowed once the service is availed by download from
+      tr
+        td a. Play Store
+      tr
+        td b. App Store
+      tr
+        td
+          br
+          br
+          | For Octal Optimum Technologies Pvt Ltd.
+      tr
+        td
+          br
+          br
+          | Authorised Signatory

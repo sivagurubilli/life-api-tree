@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook and Chef</title>
+</head>
+
+<body style="font-family: 'Arial', serif;  width:100%;">
+    <div class="header"
+        style=" float: left; padding-left: 80px; margin-top:-10px; margin-left:-10px; width: 100%; background: #ff5c09; color: white; font-size: 20px; font-weight: 200; ">
+        <h2>Invoice</h2>
+    </div>
+
+    <div
+        style=" width: 30%; height: 20%; padding-top: 20px; padding-left: 42px; float: left; align-items: flex-start; padding-bottom: 10px; ">
+        <a href="index.html"><img src="https://cookandchef.s3.ap-south-1.amazonaws.com/cnc/logo.png"
+                style=" width: 78%;  "></a>
+
+
+        <hr
+            style=" border-radius: 5px; margin-top: 30px; margin-left: -107px; width: 250px; border-top: 10px solid #ff5c09; ">
+    </div>
+    <div style=" margin-left:10px; padding-top: 170px; font-size: 30px; color: #f84b06; ">
+
+        <h3>CookandChef India Pvt. Ltd.</h3>
+
+    </div>
+    <div style=" padding-top: 10px; margin-left: 28px; ">
+
+        <p>Invoice No: {{invoiceNumber}}</p>
+        <p>Invoice Date: {{invoiceDate}}</p>
+
+    </div>
+
+    <table
+        style=" font-family: arial, sans-serif; border-collapse: collapse; width: 80%; margin-left: 78px; margin-top: 50px; ">
+        <tr>
+            <th style=" justify-content: center;  border: 1px solid #0a0000; text-align: left; padding: 5px;">Billed by
+            </th>
+            <th style=" justify-content: center;  border: 1px solid #0a0000; text-align: left; padding: 5px;">Billed to
+            </th>
+
+        </tr>
+        <tr>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">CookandChef India Pvt Ltd </td>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">{{name}}</td>
+        </tr>
+        <tr>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">Address: Dhenkanal, Odisha, 759014
+            </td>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">Address: {{address}}</td>
+        </tr>
+        <tr>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">Email: support@cookandchef.in</td>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">Email: {{email}}</td>
+        </tr>
+        <tr>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">Phone: 91788 28999 </td>
+            <td style=" border: 1px solid #0a0000; text-align: left; padding: 5px;">Phone: {{mobile}}</td>
+        </tr>
+
+    </table>
+
+    <table class="table1"
+        style=" font-family: arial, sans-serif; border-collapse: collapse; width: 80%; margin-left: 78px; margin-top: 50px; ">
+        <tr>
+            <td style=" border: 1px solid #ff5c09; text-align: left;  padding: 5px; ">Item Name</td>
+            <td style=" border: 1px solid #ff5c09; text-align: left;  padding: 5px;">Description</td>
+            <td style=" border: 1px solid #ff5c09; text-align: left;  padding: 5px;">Amount</td>
+
+        </tr>
+        <tr>
+            <td rowspan="7"
+                style=" border: 1px solid #ff5c09; text-align: left;  padding: 5px; font-style: italic; font-weight: bold;">
+                Plan name:{{planName}}</td>
+            <td
+                style=" border-right:1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                {{planValidity}} days Validity</td>
+            <td rowspan="5"
+                style=" border-right:1px solid #ff5c09; text-align: left;  background-color: rgb(238, 229, 179); padding: 5px;">
+                Rs. {{planPrice}}</td>
+        </tr>
+        <tr>
+
+            <td
+                style=" border-right:1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                Profile Featuring</td>
+
+        </tr>
+        <tr>
+            <td
+                style=" border-right:1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                {{totalActionsPerMonth}} Job applies per month </td>
+        </tr>
+        <tr>
+
+            <td
+                style=" border-right:1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                Unlimited Job Views</td>
+        </tr>
+        <tr>
+
+            <td
+                style=" border-right:1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                Support Assistance</td>
+        </tr>
+        <tr>
+            <td style=" border: 1px solid #ff5c09; text-align: left; padding:5px; ">
+                <p>Discounts</p>
+            </td>
+            <td style=" border: 1px solid #ff5c09; text-align: left; padding:5px;">Rs. {{discount}} </td>
+        </tr>
+        <tr>
+            <td
+                style=" border: 1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                <b>Total</b>
+            </td>
+            <td
+                style=" border: 1px solid #ff5c09; text-align: left;  padding: 5px; background-color: rgb(238, 229, 179);">
+                Rs.
+                {{totalPrice}}</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <hr class="rounded"
+        style=" border-radius: 5px; margin-top: 30px; margin-left: -107px; width: 250px; border-top: 10px solid #fd3705; ">
+
+
+
+    <div align="center">
+
+        <p style=" padding-top: 30px;  margin-left: -100px; color:silver; font-style: italic; ">
+            <br>
+            <br>
+
+            <br>
+            ***Computer generated invoice- No Signature required***
+        </p>
+        <br>
+        <br>
+    </div>
+    <div style=" margin-left: 120px; margin-right: 120px; text-align: justify; align-content: center; width:80%; "
+        align="center">
+        <p><i>Note: CookandChef is a job portal. CookandChef always make sure</i> to keep the details of users secure
+            but
+            will not be liable
+            for unauthorized access to the information provided by any party whatsoever. CookandChef will not be
+            responsible
+            if any
+            candidate has committed crime/illegal activity at employer's premises. Background verification of candidates
+            who
+            are/will
+            be hired is a responsibility of respective recruiter/recruiter's company. The refund policy is applicable
+            for some
+            specific
+            plans and when customer reports to the support team with in the mentioned timeline.</p>
+
+    </div>
+
+
+</body>
+
+</html>
